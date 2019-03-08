@@ -7,6 +7,7 @@ const sequelize = new Sequelize('test-db', 'postgres', 'argusadmin', {
 
 const db = {
     User: sequelize.import('./user'),
+    Post: sequelize.import('./post')
 }
 
 // Object.keys(db).forEach((modelName) => {
